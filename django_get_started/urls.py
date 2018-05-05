@@ -21,7 +21,8 @@ urlpatterns = patterns('',
 
     url(r'^lista_candidatos', 'app.views.lista_candidatos', name='lista_candidatos'),            
 
-    url(r'^lista_candidatos', 'app.views.lista_candidatos', name='lista_candidatos'),                   
+    url(r'^lista_candidatos', 'app.views.lista_candidatos', name='lista_candidatos'),
+    url(r'^lista_locais_prova', 'app.views.lista_locais_prova', name='lista_locais_prova'),                   
 
     url(r'^login/$',
         'django.contrib.auth.views.login',
