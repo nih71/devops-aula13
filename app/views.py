@@ -84,8 +84,12 @@ def lista_candidatos(request):
         context_instance = RequestContext(request,
         {
             'title':'Cadastro de candidatos',
+
 #            'cursos': ['ADS' , 'SI', 'CC'],
             'candidatos': Candidato.objects.all(),
+
+            'candidatos': Vestibular.objects.all(),
+
             'year':datetime.now().year,
         })
     )
