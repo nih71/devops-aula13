@@ -9,9 +9,9 @@
 <table class="table">
     <tr><th>Locais de provar</th></tr>
         {% for local in locais %}
-          <tr><td>{{ vestibular.nome }}</td></tr>
-          <tr><td>{{ vestibular.cidade }}</td></tr>
-          <tr><td>{{ vestibular.estado }}</td></tr>
+          <tr><td>{{ local.nome }}</td></tr>
+          <tr><td>{{ local.cidade }}</td></tr>
+          <tr><td>{{ local.estado }}</td></tr>
 
         {% endfor %}
 </table>
